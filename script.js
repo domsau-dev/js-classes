@@ -44,9 +44,12 @@ for (let i = 0; i < 5; i++) {
     for (let j = 0; j <= i; j++) {
         laiptiniuSkaicius.push(j + 1);
     }
+    let butuSkaicius = [];
     let min = 1;
     let max = 99;
-    let butuSkaicius = Math.floor(Math.random() * (max - min + 1) + min);
+    for (let j = 0; j <= i; j++) {
+        butuSkaicius.push(Math.floor(Math.random() * (max - min + 1) + min));
+    }
     namai.push(new Namas(miestas, pastatymoData, adresas, laiptiniuSkaicius, butuSkaicius));
 }
 
